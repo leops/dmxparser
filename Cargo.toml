@@ -1,0 +1,19 @@
+[package]
+name = "dmxparser"
+version = "0.1.0"
+description = "Reading the Valve Data Model eXchange (DMX) format"
+license = "MIT"
+authors = ["l3ops <github@leops.me>"]
+edition = "2018"
+
+[dependencies]
+anyhow = "1.0.34"
+serde_json = "1.0.53"
+
+[dependencies.serde]
+version = "1.0.110"
+features = ["derive"]
+
+[[test]]
+name = "reader"
+harness = false
